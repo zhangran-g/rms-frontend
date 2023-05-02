@@ -30,8 +30,15 @@ menus:
   hsfourZeroOne: "403"
   hsFive: "500"
   permission: Permission Manage
-  permissionPage: Switch Permission
+  permissionPage: Switch Role
   permissionButton: Button Permission
+  positionIntroduction: Positions
+  profile: Personl Information
+  application: Application
+  applicationnew: New application
+  applicationprogress: Application Progress
+  applicationmanage: Manage application
+  faqs: FAQs
 status:
   hsLoad: Loading...
 login:

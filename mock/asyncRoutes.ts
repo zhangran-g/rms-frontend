@@ -10,7 +10,7 @@ import { MockMethod } from "vite-plugin-mock";
 const informationRouter = {
   path: "/information",
   meta: {
-    title: "岗位介绍",
+    title: "menus.positionIntroduction",
     icon: "collection",
     rank: 1
   },
@@ -19,7 +19,7 @@ const informationRouter = {
       path: "/information/manage",
       name: "InformationManage",
       meta: {
-        title: "岗位介绍",
+        title: "menus.positionIntroduction",
         roles: ["admin"]
       }
     },
@@ -27,7 +27,7 @@ const informationRouter = {
       path: "/information/view",
       name: "InformationView",
       meta: {
-        title: "岗位介绍",
+        title: "menus.positionIntroduction",
         roles: ["applicant"]
       }
     }
@@ -37,7 +37,7 @@ const informationRouter = {
 const profileRouter = {
   path: "/profile",
   meta: {
-    title: "个人信息",
+    title: "menus.profile",
     icon: "avatar",
     rank: 2
   },
@@ -46,7 +46,7 @@ const profileRouter = {
       path: "/profile/index",
       name: "Profile",
       meta: {
-        title: "个人信息",
+        title: "menus.profile",
         roles: ["applicant"]
       }
     }
@@ -56,7 +56,7 @@ const profileRouter = {
 const applicationRouter = {
   path: "/application",
   meta: {
-    title: "职位申请",
+    title: "menus.application",
     icon: "document-copy",
     rank: 3
   },
@@ -65,7 +65,7 @@ const applicationRouter = {
       path: "/application/new/index",
       name: "ApplicationNew",
       meta: {
-        title: "新的申请",
+        title: "menus.applicationnew",
         roles: ["applicant"]
       }
     },
@@ -73,7 +73,7 @@ const applicationRouter = {
       path: "/application/progress/index",
       name: "ApplicationProgress",
       meta: {
-        title: "申请进度",
+        title: "menus.applicationprogress",
         roles: ["applicant"]
       }
     },
@@ -81,7 +81,7 @@ const applicationRouter = {
       path: "/application/manage/index",
       name: "ApplicationManage",
       meta: {
-        title: "申请管理",
+        title: "menus.applicationmanage",
         roles: ["admin"]
       }
     }
@@ -91,7 +91,7 @@ const applicationRouter = {
 const faqsRouter = {
   path: "/faqs",
   meta: {
-    title: "常见问题",
+    title: "menus.faqs",
     icon: "question",
     rank: 4
   },
@@ -100,7 +100,7 @@ const faqsRouter = {
       path: "/faqs/index",
       name: "Faqs",
       meta: {
-        title: "常见问题",
+        title: "menus.faqs",
         roles: ["applicant"]
       }
     }

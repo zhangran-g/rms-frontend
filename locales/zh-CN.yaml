@@ -32,6 +32,13 @@ menus:
   permission: 权限管理
   permissionPage: 角色切换
   permissionButton: 按钮权限
+  positionIntroduction: 岗位介绍
+  profile: 个人信息
+  application: 职位申请
+  applicationnew: 新的申请
+  applicationprogress: 申请进度
+  applicationmanage: 申请管理
+  faqs: 常见问题
 status:
   hsLoad: 加载中...
 login:
