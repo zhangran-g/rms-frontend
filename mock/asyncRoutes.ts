@@ -16,7 +16,7 @@ const informationRouter = {
   },
   children: [
     {
-      path: "/information/manage",
+      path: "/information/manage/index",
       name: "InformationManage",
       meta: {
         title: "menus.positionIntroduction",
@@ -24,7 +24,7 @@ const informationRouter = {
       }
     },
     {
-      path: "/information/view",
+      path: "/information/positionview/index",
       name: "InformationView",
       meta: {
         title: "menus.positionIntroduction",

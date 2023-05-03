@@ -53,7 +53,7 @@ const handleconfirm = () => {
         <template #extra>
           <div class="flex">
             <el-button
-              @click="$router.push({ path: '/information/view' })"
+              @click="$router.push({ path: '/information/positionview/index' })"
               type="primary"
               >返回岗位介绍</el-button
             >

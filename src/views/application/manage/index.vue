@@ -4,6 +4,7 @@ import { useRole } from "./hook";
 import { PureTableBar } from "@/components/RePureTableBar";
 import { PureTable } from "@pureadmin/table";
 import { useRenderIcon } from "@/components/ReIcon/src/hooks";
+import { $t, transformI18n } from "@/plugins/i18n";
 
 import Database from "@iconify-icons/ri/database-2-line";
 import More from "@iconify-icons/ep/more-filled";
@@ -43,18 +44,26 @@ const {
       :model="form"
       class="bg-bg_color w-[99/100] pl-8 pt-4"
     >
-      <el-form-item label="申请人名字：" prop="name">
+      <el-form-item
+        :label="transformI18n($t('application.applicantname'))"
+        prop="name"
+      >
         <el-input
           v-model="form.name"
-          placeholder="请输入申请人名字"
+          :placeholder="
+            transformI18n($t('application.pleaseinputapplicantname'))
+          "
           clearable
           class="!w-[200px]"
         />
       </el-form-item>
-      <el-form-item label="状态：" prop="status">
+      <el-form-item
+        :label="transformI18n($t('application.status'))"
+        prop="status"
+      >
         <el-select
           v-model="form.status"
-          placeholder="请选择状态"
+          :placeholder="transformI18n($t('application.pleaseselectstatus'))"
           clearable
           class="!w-[180px]"
         >
@@ -72,15 +81,18 @@ const {
           :loading="loading"
           @click="onSearch"
         >
-          搜索
+          {{ transformI18n($t("application.search")) }}
         </el-button>
         <el-button :icon="useRenderIcon(Refresh)" @click="resetForm(formRef)">
-          重置
+          {{ transformI18n($t("application.reset")) }}
         </el-button>
       </el-form-item>
     </el-form>
 
-    <PureTableBar title="申请列表" @refresh="onSearch">
+    <PureTableBar
+      :title="transformI18n($t('application.applicationlist'))"
+      @refresh="onSearch"
+    >
       <template v-slot="{ size, checkList }">
         <pure-table
           border

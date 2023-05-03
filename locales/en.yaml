@@ -1,50 +1,100 @@
+application:
+  applicantname: Applicant name
+  applicationlist: Applications list
+  coverletter: Cover letter
+  cv: CV
+  newapplication: New application
+  othermaterials: Other materials
+  pleaseinputapplicantname: Please input the name of applicant
+  pleaseselectstatus: Please select status
+  reset: Reset
+  save: Save
+  search: Search
+  status: Status
 buttons:
   hsLoginOut: LoginOut
-  hsfullscreen: FullScreen
-  hsexitfullscreen: ExitFullscreen
-  hsrefreshRoute: RefreshRoute
-  hslogin: Login
   hsadd: Add
-  hsmark: Mark/Cancel
-  hssave: Save
-  hssearch: Search
-  hsexpendAll: Expand All
-  hscollapseAll: Collapse All
-  hssystemSet: Open ProjectConfig
-  hsdelete: Delete
-  hsreload: Reload
+  hscloseAllTabs: Close AllTabs
   hscloseCurrentTab: Close CurrentTab
   hscloseLeftTabs: Close LeftTabs
-  hscloseRightTabs: Close RightTabs
   hscloseOtherTabs: Close OtherTabs
-  hscloseAllTabs: Close AllTabs
-  hswholeFullScreen: FullScreen
-  hswholeExitFullScreen: ExitFull
-  hscontentFullScreen: Content FullScreen
+  hscloseRightTabs: Close RightTabs
+  hscollapseAll: Collapse All
   hscontentExitFullScreen: Content ExitFullScreen
-menus:
-  hshome: Home
+  hscontentFullScreen: Content FullScreen
+  hsdelete: Delete
+  hsexitfullscreen: ExitFullscreen
+  hsexpendAll: Expand All
+  hsfullscreen: FullScreen
   hslogin: Login
-  hsabnormal: Abnormal Page
-  hsfourZeroFour: "404"
-  hsfourZeroOne: "403"
-  hsFive: "500"
-  permission: Permission Manage
-  permissionPage: Switch Role
-  permissionButton: Button Permission
-  positionIntroduction: Positions
-  profile: Personl Information
-  application: Application
-  applicationnew: New application
-  applicationprogress: Application Progress
-  applicationmanage: Manage application
-  faqs: FAQs
-status:
-  hsLoad: Loading...
+  hsmark: Mark/Cancel
+  hsrefreshRoute: RefreshRoute
+  hsreload: Reload
+  hssave: Save
+  hssearch: Search
+  hssystemSet: Open ProjectConfig
+  hswholeExitFullScreen: ExitFull
+  hswholeFullScreen: FullScreen
+information:
+  cancel: Cancel
+  chanpin: Product
+  confiem: Confrim
+  createposition: Create a position
+  delete: Delete
+  deleteconfirm: >-
+    After confirmation, this position information will be deleted and cannot be
+    restored!
+  deletesuccess: delete successfully
+  edit: Edit
+  editposition: Edit position
+  jishu: Technology
+  'no': N/A
+  nodata: No data found
+  notice: Notice
+  pleaseinputpositiondescription: Please enter the position description
+  pleaseinputpositionname: Please input the name of position
+  positiondescription: Description
+  positionname: Position
+  positionstatus: Status
+  positionstatusno: Stop recruiting
+  positionstatusyes: Recruiting
+  positiontype: Type
+  sheji: Design
+  shichang: Marketing
+  submitsuccess: Submit successfully
+  viewposition: View position
+  yunying: Operations
+  zhineng: Functional
+interface:
+  chinese: Chinese
+  english: English
 login:
-  username: Username
-  password: Password
   login: Login
-  usernameReg: Please enter username
+  loginSuccess: Login successfully!
+  password: Password
   passwordReg: Please enter password
   passwordRuleReg: The password format should be any combination of 8-18 digits
+  username: bob (admin) or alice (applicant)
+  usernameReg: Please enter username
+  usernotfound: User not found!
+menus:
+  application: Application
+  applicationmanage: Manage application
+  applicationnew: New application
+  applicationprogress: Application Progress
+  faqs: FAQs
+  hsFive: '500'
+  hsabnormal: Abnormal Page
+  hsfourZeroFour: '404'
+  hsfourZeroOne: '403'
+  hshome: Home
+  hslogin: Login
+  permission: Permission Manage
+  permissionButton: Button Permission
+  permissionPage: Switch Role
+  positionIntroduction: Positions
+  profile: Personl Information
+profile:
+  personalinformation: Personal Information
+status:
+  hsLoad: Loading...

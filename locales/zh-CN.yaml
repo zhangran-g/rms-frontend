@@ -1,50 +1,98 @@
+application:
+  applicantname: 申请人名字
+  applicationlist: 申请列表
+  coverletter: 求职信
+  cv: 个人简历
+  newapplication: 新的申请
+  othermaterials: 其他材料上传
+  pleaseinputapplicantname: 请输入申请人的名字
+  pleaseselectstatus: 请选择状态
+  reset: 重置
+  save: 保存
+  search: 搜索
+  status: 状态
 buttons:
   hsLoginOut: 退出系统
-  hsfullscreen: 全屏
-  hsexitfullscreen: 退出全屏
-  hsrefreshRoute: 刷新路由
-  hslogin: 登录
   hsadd: 新增
-  hsmark: 标记/取消
-  hssave: 保存
-  hssearch: 搜索
-  hsexpendAll: 全部展开
-  hscollapseAll: 全部折叠
-  hssystemSet: 打开项目配置
-  hsdelete: 删除
-  hsreload: 重新加载
+  hscloseAllTabs: 关闭全部标签页
   hscloseCurrentTab: 关闭当前标签页
   hscloseLeftTabs: 关闭左侧标签页
-  hscloseRightTabs: 关闭右侧标签页
   hscloseOtherTabs: 关闭其他标签页
-  hscloseAllTabs: 关闭全部标签页
-  hswholeFullScreen: 全屏
-  hswholeExitFullScreen: 退出全屏
-  hscontentFullScreen: 内容区全屏
+  hscloseRightTabs: 关闭右侧标签页
+  hscollapseAll: 全部折叠
   hscontentExitFullScreen: 内容区退出全屏
-menus:
-  hshome: 首页
+  hscontentFullScreen: 内容区全屏
+  hsdelete: 删除
+  hsexitfullscreen: 退出全屏
+  hsexpendAll: 全部展开
+  hsfullscreen: 全屏
   hslogin: 登录
-  hsabnormal: 异常页面
-  hsfourZeroFour: "404"
-  hsfourZeroOne: "403"
-  hsFive: "500"
-  permission: 权限管理
-  permissionPage: 角色切换
-  permissionButton: 按钮权限
-  positionIntroduction: 岗位介绍
-  profile: 个人信息
-  application: 职位申请
-  applicationnew: 新的申请
-  applicationprogress: 申请进度
-  applicationmanage: 申请管理
-  faqs: 常见问题
-status:
-  hsLoad: 加载中...
+  hsmark: 标记/取消
+  hsrefreshRoute: 刷新路由
+  hsreload: 重新加载
+  hssave: 保存
+  hssearch: 搜索
+  hssystemSet: 打开项目配置
+  hswholeExitFullScreen: 退出全屏
+  hswholeFullScreen: 全屏
+information:
+  cancel: 取消
+  chanpin: 产品
+  confiem: 确定
+  createposition: 创建岗位
+  delete: 删除
+  deleteconfirm: 确认后，此岗位信息将被删除，且无法恢复！
+  deletesuccess: 删除成功
+  edit: 编辑
+  editposition: 编辑岗位
+  jishu: 技术
+  'no': 无
+  nodata: 暂无数据
+  notice: 提示
+  pleaseinputpositiondescription: 请输入岗位描述
+  pleaseinputpositionname: 请输入岗位名称
+  positiondescription: 岗位描述
+  positionname: 岗位名称
+  positionstatus: 岗位状态
+  positionstatusno: 停止招聘
+  positionstatusyes: 正在招聘
+  positiontype: 岗位类型
+  sheji: 设计
+  shichang: 市场
+  submitsuccess: 提交成功！
+  viewposition: 查看岗位
+  yunying: 运营
+  zhineng: 职能
+interface:
+  chinese: 简体中文
+  english: 英语
 login:
-  username: 账号
-  password: 密码
   login: 登录
-  usernameReg: 请输入账号
+  loginSuccess: 登录成功！
+  password: 密码
   passwordReg: 请输入密码
   passwordRuleReg: 密码格式应为8-18位数字、字母、符号的任意两种组合
+  username: 招聘官bob，应聘者alice
+  usernameReg: 请输入账号
+  usernotfound: 用户不存在
+menus:
+  application: 职位申请
+  applicationmanage: 申请管理
+  applicationnew: 新的申请
+  applicationprogress: 申请进度
+  faqs: 常见问题
+  hsFive: '500'
+  hsabnormal: 异常页面
+  hsfourZeroFour: '404'
+  hsfourZeroOne: '403'
+  hshome: 首页
+  hslogin: 登录
+  permission: 权限管理
+  permissionButton: 按钮权限
+  permissionPage: 角色切换
+  positionIntroduction: 岗位介绍
+  profile: 个人信息
+profile:
+  personalinformation: 个人信息
+status:
+  hsLoad: 加载中...

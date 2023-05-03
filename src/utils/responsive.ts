@@ -8,9 +8,9 @@ const nameSpace = "responsive-";
 export const injectResponsiveStorage = (app: App, config: ServerConfigs) => {
   const configObj = Object.assign(
     {
-      // 国际化 默认中文zh
+      // 国际化 默认英文en
       locale: Storage.getData("locale", nameSpace) ?? {
-        locale: config.Locale ?? "zh"
+        locale: config.Locale ?? "en"
       },
       // layout模式以及主题
       layout: Storage.getData("layout", nameSpace) ?? {
@@ -31,9 +31,9 @@ export const injectResponsiveStorage = (app: App, config: ServerConfigs) => {
     },
     config.MultiTagsCache
       ? {
-          // 默认显示首页tag
-          tags: Storage.getData("tags", nameSpace) ?? routerArrays
-        }
+        // 默认显示首页tag
+        tags: Storage.getData("tags", nameSpace) ?? routerArrays
+      }
       : {}
   );
 

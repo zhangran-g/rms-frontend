@@ -9,14 +9,13 @@ import { useTranslationLang } from "../hooks/useTranslationLang";
 import globalization from "@/assets/svg/globalization.svg?component";
 import useravatar from "@/assets/svg/user_avatar.svg?component";
 import LogoutCircleRLine from "@iconify-icons/ri/logout-circle-r-line";
-import Setting from "@iconify-icons/ri/settings-3-line";
 import Check from "@iconify-icons/ep/check";
+import { $t, transformI18n } from "@/plugins/i18n";
 
 const {
   layout,
   device,
   logout,
-  onPanel,
   pureApp,
   username,
   avatarsStyle,
@@ -59,26 +58,26 @@ const { t, locale, translationCh, translationEn } = useTranslationLang();
         <template #dropdown>
           <el-dropdown-menu class="translation">
             <el-dropdown-item
-              :style="getDropdownItemStyle(locale, 'zh')"
-              :class="['dark:!text-white', getDropdownItemClass(locale, 'zh')]"
-              @click="translationCh"
-            >
-              <IconifyIconOffline
-                class="check-zh"
-                v-show="locale === 'zh'"
-                :icon="Check"
-              />
-              简体中文
-            </el-dropdown-item>
-            <el-dropdown-item
               :style="getDropdownItemStyle(locale, 'en')"
               :class="['dark:!text-white', getDropdownItemClass(locale, 'en')]"
               @click="translationEn"
             >
-              <span class="check-en" v-show="locale === 'en'">
+              <IconifyIconOffline
+                class="check-en"
+                v-show="locale === 'en'"
+                :icon="Check"
+              />
+              {{ transformI18n($t("interface.english")) }}
+            </el-dropdown-item>
+            <el-dropdown-item
+              :style="getDropdownItemStyle(locale, 'zh')"
+              :class="['dark:!text-white', getDropdownItemClass(locale, 'zh')]"
+              @click="translationCh"
+            >
+              <span class="check-zh" v-show="locale === 'zh'">
                 <IconifyIconOffline :icon="Check" />
               </span>
-              English
+              {{ transformI18n($t("interface.chinese")) }}
             </el-dropdown-item>
           </el-dropdown-menu>
         </template>
@@ -101,13 +100,13 @@ const { t, locale, translationCh, translationEn } = useTranslationLang();
           </el-dropdown-menu>
         </template>
       </el-dropdown>
-      <span
+      <!-- <span
         class="set-icon navbar-bg-hover"
         :title="t('buttons.hssystemSet')"
         @click="onPanel"
       >
         <IconifyIconOffline :icon="Setting" />
-      </span>
+      </span> -->
     </div>
   </div>
 </template>

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { type CSSProperties, computed, reactive } from "vue";
 import { useUserStoreHook } from "@/store/modules/user";
+import { $t, transformI18n } from "@/plugins/i18n";
 
 defineOptions({
   // name 作为一种规范最好必须写上并且和路由的name保持一致
@@ -16,11 +17,11 @@ const elStyle = computed((): CSSProperties => {
 
 const mockprofile = reactive({
   name: useUserStoreHook()?.username,
-  city: "北京",
+  city: "Beijing",
   date: "1997-02-06",
-  school: "山东大学",
+  school: "Northern Arizona University",
   skill: ["前端", "移动端"],
-  intro: "阳光积极，喜欢Web和移动端技术。"
+  intro: "Sunny and positive, love web and mobile technologies."
 });
 
 const onSubmit = () => {
@@ -33,7 +34,7 @@ const onSubmit = () => {
     <el-card shadow="never" :style="elStyle">
       <template #header>
         <div class="card-header">
-          <span>个人信息</span>
+          <span>{{ transformI18n($t("profile.personalinformation")) }}</span>
         </div>
       </template>
       <el-form :model="mockprofile" label-width="120px">

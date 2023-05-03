@@ -18,7 +18,7 @@ export default [
             expires: "2023/10/30 00:00:00"
           }
         };
-      } else {
+      } else if (body.username === "alice") {
         return {
           success: true,
           data: {
@@ -27,6 +27,18 @@ export default [
             roles: ["applicant"],
             accessToken: "eyJhbGciOiJIUzUxMiJ9.alice",
             refreshToken: "eyJhbGciOiJIUzUxMiJ9.aliceRefresh",
+            expires: "2023/10/30 00:00:00"
+          }
+        };
+      } else {
+        return {
+          success: false,
+          data: {
+            username: "none",
+            // 一个用户可能有多个角色
+            roles: ["none"],
+            accessToken: "none",
+            refreshToken: "none",
             expires: "2023/10/30 00:00:00"
           }
         };
